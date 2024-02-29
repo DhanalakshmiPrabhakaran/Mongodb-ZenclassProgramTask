@@ -1,0 +1,9 @@
+db.getCollection('Codekata').aggregate(
+  [
+    {
+      $group: {
+        _id: 'Total Problem Solved By users',
+        count: { $sum: '$problemSolved' }
+      }
+    }
+  ])

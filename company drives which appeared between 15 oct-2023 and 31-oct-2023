@@ -1,0 +1,6 @@
+db.getCollection('Company_Drives').find({
+  driveDate: {
+    $gte: '2023-10-15',
+    $lte: '2023-10-31'
+  }
+});
